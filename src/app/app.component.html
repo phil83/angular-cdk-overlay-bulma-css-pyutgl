@@ -1,0 +1,20 @@
+
+
+<nav class="panel">
+<p class="panel-heading">
+  Repositories
+</p>
+
+
+<a class="panel-block" *ngFor="let hero of heroes">
+<input type="checkbox" [checked]="hero.selected">
+{{hero.name}}
+</a>
+
+
+<div class="panel-block">
+  <button class="button is-link is-outlined is-fullwidth">
+    Add to list
+  </button>
+</div>
+</nav>
